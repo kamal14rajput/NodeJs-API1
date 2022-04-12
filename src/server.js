@@ -1,7 +1,7 @@
 var express = require('express'),
     app = express(),
     bodyparser = require('body-parser'),
-    connectdb = require('./config/database/mongodb').connect,
+    connectdb = require('/config/database/mongodb').connect,
     swagger_ui = require('swagger-ui-express'),
     swagger_doc = require('./app/lib/swagger-ui/api_docs')
 
