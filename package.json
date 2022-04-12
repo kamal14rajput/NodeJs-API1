@@ -1,10 +1,11 @@
 {
-  "name": "server",
+  "name": "NodeJs-API1",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "JavaScript server written with Express.js",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   },
   "scripts": {
     "build": "npm run lint",
@@ -12,6 +13,10 @@
     "start:dev": "npm run lint && nodemon --exec node server.js --unhandled-rejections=warn",
     "test": "jest --detectOpenHandles --coverage",
     "lint": "eslint src/**/*.js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamal14rajput/NodeJs-API1"
   },
   "author": "",
   "license": "ISC",
