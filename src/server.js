@@ -1,9 +1,9 @@
 var express = require('express'),
     app = express(),
     bodyparser = require('body-parser'),
-    connectdb = require('/config/database/mongodb').connect,
-    swagger_ui = require('swagger-ui-express'),
-    swagger_doc = require('./app/lib/swagger-ui/api_docs')
+    connectdb = require('../config/database/mongodb').connect,
+    swagger_ui = require('../lib/swagger-ui'),
+    swagger_doc = require('../lib/swagger-ui/api_docs.json')
 
 require('./app/routes/routes')(app);
 
