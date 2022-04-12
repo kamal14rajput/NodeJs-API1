@@ -9,8 +9,8 @@
   },
   "scripts": {
     "build": "npm run lint",
-    "start": "node server.js",
-    "start:dev": "npm run lint && nodemon --exec node server.js --unhandled-rejections=warn",
+    "start": "node src/server.js",
+    "start:dev": "npm run lint && nodemon --exec node src/server.js --unhandled-rejections=warn",
     "test": "jest --detectOpenHandles --coverage",
     "lint": "eslint src/**/*.js --fix"
   },
